@@ -1,9 +1,9 @@
-import Profile from "./pages/Profile";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
     <>
-      <Profile />
+      <ProfilePage />
     </>
   );
 }
