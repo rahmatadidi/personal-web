@@ -5,8 +5,32 @@ import { Button } from "../components/ui/button";
 import ContactPage from "./ContactPage";
 import ProjectPage from "./ProjectPage";
 import SkillPage from "./SkillPage";
+import { useEffect, useState } from "react";
 
 export default function ProfilePage() {
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const message = "Welcome to My Personal Website";
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isDeleting) {
+        setText((prev) => message.substring(0, prev.length + 1));
+        if (text === message) {
+          setTimeout(() => setIsDeleting(true), 1000);
+        }
+      } else {
+        setText((prev) => message.substring(0, prev.length - 1));
+        if (text === "") {
+          setIsDeleting(false);
+          setIndex(0);
+        }
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [text, isDeleting]);
   return (
     <div className="flex flex-col min-h-[100dvh] bg-background text-muted-foreground">
       <header className="sticky top-0 z-50 bg-muted">
@@ -15,7 +39,7 @@ export default function ProfilePage() {
             <CodeIcon className="h-6 w-6" />
             <div className="text-2xl font-bold">
               <div className="inline-block">
-                <span>Welcome to My Personal Website</span>
+                <span>{text}</span>
               </div>
             </div>
           </div>
@@ -90,7 +114,7 @@ export default function ProfilePage() {
       </main>
       <footer className="bg-secondary py-6 text-center text-sm text-muted-foreground">
         <div className="container">
-          &copy; 2024 John Doe. All rights reserved.
+          &copy; 2024 Rahmat Adi Santoso. All rights reserved.
         </div>
       </footer>
     </div>
