@@ -12,17 +12,18 @@ import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { Link } from "react-router-dom";
 import { Textarea } from "../components/ui/textarea";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 
 export default function Profile() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-background text-foreground">
-      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur">
+    <div className="flex flex-col min-h-[100dvh] bg-background text-muted-foreground">
+      <header className="sticky top-0 z-50 bg-muted">
         <div className="container flex items-center justify-between h-16 px-4 md:px-6">
           <div className="flex items-center gap-2">
             <CodeIcon className="h-6 w-6" />
             <div className="text-2xl font-bold">
               <div className="inline-block">
-                <span>John Doe's Personal Website</span>
+                <span>Welcome to My Personal Website</span>
               </div>
             </div>
           </div>
@@ -81,20 +82,19 @@ export default function Profile() {
               </p>
             </div>
             <div className="flex justify-center">
-              <img
-                src="/placeholder.svg"
-                width="300"
-                height="300"
-                alt="John Doe"
-                className="rounded-full"
-                style={{ aspectRatio: "300/300", objectFit: "cover" }}
-              />
+              <Avatar className="w-50 h-50">
+                <AvatarImage
+                  src="https://github.com/shadcn.png"
+                  alt="@shadcn"
+                />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
             </div>
           </div>
         </section>
         <section
           id="skills"
-          className="py-12 md:py-24 bg-muted"
+          className="py-12 md:py-24 bg-secondary"
         >
           <div className="container grid gap-6 px-4 md:px-6 md:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-4">
@@ -147,7 +147,7 @@ export default function Profile() {
               </p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Card className="h-full">
+              <Card className="h-full bg-muted">
                 <CardHeader>
                   <img
                     src="/placeholder.svg"
@@ -158,7 +158,7 @@ export default function Profile() {
                     style={{ aspectRatio: "400/225", objectFit: "cover" }}
                   />
                 </CardHeader>
-                <CardContent className="p-4">
+                <CardContent className="p-4 text-muted-foreground">
                   <h3 className="text-lg font-semibold">Project 1</h3>
                   <p className="mt-2 text-muted-foreground">Lorem ipsum</p>
                   <div className="mt-4 flex justify-end">
@@ -171,7 +171,7 @@ export default function Profile() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="h-full">
+              <Card className="h-full bg-muted">
                 <CardHeader>
                   <img
                     src="/placeholder.svg"
@@ -182,7 +182,7 @@ export default function Profile() {
                     style={{ aspectRatio: "400/225", objectFit: "cover" }}
                   />
                 </CardHeader>
-                <CardContent className="p-4">
+                <CardContent className="p-4 text-muted-foreground">
                   <h3 className="text-lg font-semibold">Project 2</h3>
                   <p className="mt-2 text-muted-foreground">
                     A personal blog built with Next.js and Markdown.
@@ -197,7 +197,7 @@ export default function Profile() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="h-full">
+              <Card className="h-full bg-muted">
                 <CardHeader>
                   <img
                     src="/placeholder.svg"
@@ -208,9 +208,9 @@ export default function Profile() {
                     style={{ aspectRatio: "400/225", objectFit: "cover" }}
                   />
                 </CardHeader>
-                <CardContent className="p-4">
+                <CardContent className="p-4 text-muted-foreground">
                   <h3 className="text-lg font-semibold">Project 3</h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-2 ">
                     A task management app built with React, Firebase, and
                     Tailwind CSS.
                   </p>
@@ -229,7 +229,7 @@ export default function Profile() {
         </section>
         <section
           id="contact"
-          className="py-12 md:py-24 bg-muted"
+          className="py-12 md:py-24 bg-secondary"
         >
           <div className="container grid gap-6 px-4 md:px-6 md:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-4">
@@ -280,7 +280,7 @@ export default function Profile() {
           </div>
         </section>
       </main>
-      <footer className="bg-muted py-6 text-center text-sm text-muted-foreground">
+      <footer className="bg-secondary py-6 text-center text-sm text-muted-foreground">
         <div className="container">
           &copy; 2024 John Doe. All rights reserved.
         </div>
