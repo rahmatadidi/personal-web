@@ -38,7 +38,7 @@ export default function ProjectPage() {
                     <CardContent>
                       <div className="grid gap-4">
                         <img
-                          src="../src/assets/circleApp-logo.png"
+                          src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329332/circleApp-logo_ppqnow.png"
                           alt="circelApp logo"
                           width={600}
                           height={400}
@@ -71,7 +71,7 @@ export default function ProjectPage() {
                     <CardContent>
                       <div className="grid gap-4">
                         <img
-                          src="../src/assets/akoelakoe-logo.png"
+                          src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329296/akoelakoe-logo_kutrvs.png"
                           alt="akoelakoe logo"
                           width={600}
                           height={400}
@@ -104,7 +104,7 @@ export default function ProjectPage() {
                     <CardContent>
                       <div className="grid gap-4">
                         <img
-                          src="../src/assets/COS-logo.png"
+                          src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329408/COS-logo_bhirlq.png"
                           alt="Clash Of Song App"
                           width={600}
                           height={400}
@@ -137,7 +137,7 @@ export default function ProjectPage() {
                     <CardContent>
                       <div className="grid gap-4">
                         <img
-                          src="../src/assets/DS-logo.png"
+                          src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329414/DS-logo_ipf4wu.png"
                           alt="DumbSound"
                           width={600}
                           height={400}

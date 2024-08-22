@@ -107,7 +107,7 @@ export default function ProfilePage() {
             <div className="flex justify-center">
               <Avatar className="w-50 h-50">
                 <AvatarImage
-                  src="../../src/assets/poto-profile.jpg"
+                  src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329534/poto-profile_rvubto.jpg"
                   alt="@shadcn"
                 />
               </Avatar>

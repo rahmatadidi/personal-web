@@ -17,7 +17,7 @@ export default function SkillPage() {
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-html.webp"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329456/logo-html_ko9rkj.webp"
                 alt="logo-html"
                 className="h-24 w-28"
               />
@@ -25,7 +25,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-css.webp"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329427/logo-css_nw9xnt.webp"
                 alt="logo-css"
                 className="h-24 w-28"
               />
@@ -33,7 +33,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-js.webp"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329462/logo-js_vk3fcv.webp"
                 alt="js-logo"
                 className="h-24 w-28"
               />
@@ -41,7 +41,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-react.webp"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329506/logo-react_aaubwd.webp"
                 alt="logo-react"
                 className="h-24 w-28"
               />
@@ -49,7 +49,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-nest.png"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329469/logo-nest_nzibhk.png"
                 alt="logo-nest"
                 className="h-24 w-28"
               />
@@ -57,7 +57,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-node.png"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329477/logo-node_txrg7q.png"
                 alt="logo-node"
                 className="h-24 w-28"
               />
@@ -65,7 +65,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-express.png"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329437/logo-express_nhvei3.png"
                 alt="logo-express"
                 className="h-24 w-28"
               />
@@ -73,7 +73,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-ts.webp"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329516/logo-ts_llgm6c.webp"
                 alt="logo-ts"
                 className="h-24 w-28"
               />
@@ -81,7 +81,7 @@ export default function SkillPage() {
             </div>
             <div className="flex flex-col items-center gap-2 animate-bounce">
               <img
-                src="../../src/assets/logo-vue.png"
+                src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329526/logo-vue_axegbo.png"
                 alt="logo-vue"
                 className="h-24 w-28"
               />
