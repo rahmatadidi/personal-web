@@ -110,7 +110,6 @@ export default function ProfilePage() {
                   src="../../src/assets/poto-profile.jpg"
                   alt="@shadcn"
                 />
-                <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </div>
           </div>
