@@ -45,25 +45,25 @@ export default function ProfilePage() {
           </div>
           <nav className="hidden md:flex items-center gap-4">
             <Link
-              to="#"
+              to="/"
               className="text-sm font-medium hover:underline"
             >
               About Me
             </Link>
             <Link
-              to="#"
+              to="skill"
               className="text-sm font-medium hover:underline"
             >
               Skills
             </Link>
             <Link
-              to="#"
+              to="project"
               className="text-sm font-medium hover:underline"
             >
               My Projects
             </Link>
             <Link
-              to="#"
+              to="contact"
               className="text-sm font-medium hover:underline"
             >
               Contact Me
@@ -100,7 +100,7 @@ export default function ProfilePage() {
             <div className="flex justify-center">
               <Avatar className="w-50 h-50">
                 <AvatarImage
-                  src="https://github.com/shadcn.png"
+                  src="../../src/assets/poto-profile.jpg"
                   alt="@shadcn"
                 />
                 <AvatarFallback>CN</AvatarFallback>

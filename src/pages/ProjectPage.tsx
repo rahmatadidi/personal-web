@@ -32,12 +32,12 @@ export default function ProjectPage() {
               <CardContent className="p-4 text-muted-foreground">
                 <h3 className="text-lg font-semibold">Project 1</h3>
                 <p className="mt-2 text-muted-foreground">Lorem ipsum</p>
-                <div className="mt-4 flex justify-end">
+                <div className="mt-4 flex justify-end flex-col">
                   <Link
                     to="#"
                     className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   >
-                    View Project
+                    View Git
                   </Link>
                 </div>
               </CardContent>
@@ -58,12 +58,12 @@ export default function ProjectPage() {
                 <p className="mt-2 text-muted-foreground">
                   A personal blog built with Next.js and Markdown.
                 </p>
-                <div className="mt-4 flex justify-end">
+                <div className="mt-4 flex justify-end flex-col">
                   <Link
                     to="#"
                     className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   >
-                    View Project
+                    View Git
                   </Link>
                 </div>
               </CardContent>
@@ -85,12 +85,12 @@ export default function ProjectPage() {
                   A task management app built with React, Firebase, and Tailwind
                   CSS.
                 </p>
-                <div className="mt-4 flex justify-end">
+                <div className="mt-4 flex justify-end flex-col">
                   <Link
                     to="#"
                     className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   >
-                    View Project
+                    View Git
                   </Link>
                 </div>
               </CardContent>
