@@ -1,4 +1,4 @@
-import { CalendarDaysIcon, GitBranchIcon } from "lucide-react";
+import { CalendarDaysIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   Card,
