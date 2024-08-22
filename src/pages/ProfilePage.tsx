@@ -94,8 +94,8 @@ export default function ProfilePage() {
                 About Me
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                Hi, I'm name is Rahmat Adi Santoso, but you can call me Adi. I
-                am a graduate of vocational high school currently pursuing a
+                Hi, I'm Rahmat Adi Santoso, but you can call me Adi. I am a
+                graduate of vocational high school currently pursuing a
                 bachelor's degree. I am passionate about the IT field, which I
                 believe is advancing rapidly. Because of this, I decided to join
                 a bootcamp for approximately 3 to 4 months. During the bootcamp
