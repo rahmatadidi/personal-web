@@ -2,6 +2,7 @@ import { GitlabIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const whatsappNumber = "6281383594653";
   return (
     <>
       <div className="container max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -65,6 +66,21 @@ export default function Footer() {
               Cookie Policy
             </Link>
           </div>
+          <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fixed bottom-4 right-4 flex justify-center items-center"
+          >
+            <div className="border py-2 px-8 -mr-8 bg-wa rounded-full text-white">
+              Contact Me Via Whatsapp
+            </div>
+            <img
+              src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724432617/WhatsApp_icon_ha5e7j.webp" // Ganti dengan path atau URL gambar WhatsApp Anda
+              alt="WhatsApp"
+              className="w-12 h-12" // Ukuran gambar
+            />
+          </a>
         </div>
       </div>
     </>
