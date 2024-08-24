@@ -24,10 +24,10 @@ export default function AboutMePage() {
             </p>
           </div>
           <div className="flex justify-center">
-            <Avatar className="w-50 h-50">
+            <Avatar className="w-49 h-60">
               <AvatarImage
                 src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329534/poto-profile_rvubto.jpg"
-                alt="@shadcn"
+                alt="profile photo"
               />
             </Avatar>
           </div>

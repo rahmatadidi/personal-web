@@ -6,6 +6,7 @@ import ContactPage from "./ContactPage";
 import Footer from "./Footer";
 import ProjectPage from "./ProjectPage";
 import SkillPage from "./SkillPage";
+import ThemeSwitch from "../components/ui/switch-theme";
 
 export default function ProfilePage() {
   const [text, setText] = useState("");
@@ -42,7 +43,7 @@ export default function ProfilePage() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-background text-muted-foreground">
       <header className="sticky top-0 z-50 bg-muted">
-        <div className="container flex items-center justify-between h-16 px-4 md:px-6">
+        <div className="container flex items-center text-white justify-between h-16 px-4 md:px-6">
           <div className="flex items-center gap-2">
             <CodeIcon className="h-6 w-6" />
             <div className="text-2xl font-bold">
@@ -52,6 +53,7 @@ export default function ProfilePage() {
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-4">
+            <ThemeSwitch />
             <button
               onClick={() => scrollToSection(aboutRef)}
               className="text-sm font-medium hover:underline"
@@ -84,7 +86,13 @@ export default function ProfilePage() {
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           >
             {isSidebarOpen ? (
-              <aside className="fixed right-0 top-0 h-full bg-muted z-40 no-hover transition-transform duration-300 ease-in-out w-1/3 md:w-1/3 lg:w-1/3 p-4">
+              <aside
+                className={`fixed right-0 top-0 h-full bg-muted z-40 transition-transform duration-300 ease-in-out w-1/3 md:w-1/2 lg:w-1/3 p-4 ${
+                  isSidebarOpen
+                    ? "transform translate-x-0"
+                    : "transform translate-x-full"
+                }`}
+              >
                 <XIcon className="h-6 w-6 bg-muted text-muted-foreground" />
                 <nav className="flex text-muted-foreground flex-col items-center gap-8">
                   <button
