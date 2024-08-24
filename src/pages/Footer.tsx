@@ -72,13 +72,10 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="fixed bottom-4 right-4 flex justify-center items-center"
           >
-            <div className="border py-2 px-8 -mr-8 bg-wa rounded-full text-white">
-              Contact Me Via Whatsapp
-            </div>
             <img
-              src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724432617/WhatsApp_icon_ha5e7j.webp" // Ganti dengan path atau URL gambar WhatsApp Anda
+              src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724432617/WhatsApp_icon_ha5e7j.webp"
               alt="WhatsApp"
-              className="w-12 h-12" // Ukuran gambar
+              className="w-12 h-12"
             />
           </a>
         </div>

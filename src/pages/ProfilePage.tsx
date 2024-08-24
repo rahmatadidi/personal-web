@@ -10,7 +10,7 @@ import SkillPage from "./SkillPage";
 export default function ProfilePage() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const message = "Welcome to Journey!!";
+  const message = "Welcome to My Journey!!";
   const aboutRef = useRef<HTMLDivElement>(null);
   const skillRef = useRef<HTMLDivElement>(null);
   const projectRef = useRef<HTMLDivElement>(null);
@@ -80,7 +80,7 @@ export default function ProfilePage() {
             size="icon"
             className="md:hidden"
           >
-            <MenuIcon className="h-6 w-6" />
+            <MenuIcon className="h-6 w-6 bg-muted text-muted-foreground" />
             <span className="sr-only">Toggle navigation</span>
           </Button>
         </div>
