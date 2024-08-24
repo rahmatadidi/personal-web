@@ -75,10 +75,14 @@ export default function ProfilePage() {
               Contact Me
             </button>
           </nav>
-          <button className="md:hidden">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden bg-muted"
+          >
             <MenuIcon className="h-6 w-6 bg-muted text-muted-foreground" />
             <span className="sr-only">Toggle navigation</span>
-          </button>
+          </Button>
         </div>
       </header>
       <main className="flex-1">
