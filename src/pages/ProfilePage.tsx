@@ -1,4 +1,4 @@
-import { CodeIcon, MenuIcon } from "lucide-react";
+import { CodeIcon, MenuIcon, XIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "../components/ui/button";
 import AboutMePage from "./AboutMePage";
@@ -10,6 +10,7 @@ import SkillPage from "./SkillPage";
 export default function ProfilePage() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const message = "My Journey!!";
   const aboutRef = useRef<HTMLDivElement>(null);
   const skillRef = useRef<HTMLDivElement>(null);
@@ -18,6 +19,7 @@ export default function ProfilePage() {
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setIsSidebarOpen(false);
   };
 
   useEffect(() => {
@@ -78,9 +80,42 @@ export default function ProfilePage() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden bg-muted"
+            className="md:hidden bg-muted hover:bg-muted/90"
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           >
-            <MenuIcon className="h-6 w-6 bg-muted text-muted-foreground" />
+            {isSidebarOpen ? (
+              <aside className="fixed right-0 top-0 h-full bg-muted z-40 no-hover transition-transform duration-300 ease-in-out w-1/3 p-4">
+                <XIcon className="h-6 w-6 bg-muted text-muted-foreground" />
+                <nav className="flex text-muted-foreground flex-col items-center gap-4">
+                  <button
+                    onClick={() => scrollToSection(aboutRef)}
+                    className="text-sm font-medium hover:underline"
+                  >
+                    About Me
+                  </button>
+                  <button
+                    onClick={() => scrollToSection(skillRef)}
+                    className="text-sm font-medium hover:underline"
+                  >
+                    Skills
+                  </button>
+                  <button
+                    onClick={() => scrollToSection(projectRef)}
+                    className="text-sm font-medium hover:underline"
+                  >
+                    My Projects
+                  </button>
+                  <button
+                    onClick={() => scrollToSection(contactRef)}
+                    className="text-sm font-medium hover:underline"
+                  >
+                    Contact Me
+                  </button>
+                </nav>
+              </aside>
+            ) : (
+              <MenuIcon className="h-6 w-6 bg-muted text-muted-foreground" />
+            )}
             <span className="sr-only">Toggle navigation</span>
           </Button>
         </div>
