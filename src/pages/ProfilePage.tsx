@@ -84,7 +84,7 @@ export default function ProfilePage() {
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           >
             {isSidebarOpen ? (
-              <aside className="fixed right-0 top-0 h-full bg-muted z-40 no-hover transition-transform duration-300 ease-in-out w-1/2 p-4">
+              <aside className="fixed right-0 top-0 h-full bg-muted z-40 no-hover transition-transform duration-300 ease-in-out w-1/3 md:w-1/3 lg:w-1/3 p-4">
                 <XIcon className="h-6 w-6 bg-muted text-muted-foreground" />
                 <nav className="flex text-muted-foreground flex-col items-center gap-8">
                   <button
