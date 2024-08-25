@@ -6,8 +6,11 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
+import useThemeStore from "../store/themeStore";
 
 export default function ProjectPage() {
+  const { theme } = useThemeStore();
+
   return (
     <>
       <div className="w-full py-12">
@@ -25,26 +28,28 @@ export default function ProjectPage() {
                   to="#"
                   className="block"
                 >
-                  <Card className="h-full w-full bg-secondary group-hover:scale-105 transition-transform group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Card className="h-full w-full bg-muted text-white group-hover:scale-105 transition-transform group-hover:bg-secondary group-hover:text-txt-primary">
                     <CardHeader>
                       <div className="flex items-center gap-4">
                         <div className="grid gap-1">
-                          <CardTitle className="text-muted-foreground">
-                            Circle App
-                          </CardTitle>
+                          <CardTitle className="">Circle App</CardTitle>
                         </div>
                       </div>
                     </CardHeader>
                     <CardContent>
                       <div className="grid gap-4">
                         <img
-                          src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329332/circleApp-logo_ppqnow.png"
+                          src={
+                            theme === "light"
+                              ? "https://res.cloudinary.com/ddfdf66n7/image/upload/v1724542993/Circle_App_white_ytxdbn.png"
+                              : "https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329332/circleApp-logo_ppqnow.png"
+                          }
                           alt="circelApp logo"
                           width={600}
                           height={400}
                           className="rounded-md object-cover w-full aspect-[3/2]"
                         />
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary-foreground">
+                        <div className="flex items-center gap-2 text-sm">
                           <CalendarDaysIcon className="h-8 w-8" />
                           <span>Crated At 27 May 2024 - 28 June 2024</span>
                         </div>
@@ -58,26 +63,28 @@ export default function ProjectPage() {
                   to="#"
                   className="block"
                 >
-                  <Card className="h-full w-full bg-secondary group-hover:scale-105 transition-transform group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Card className="h-full w-full bg-muted text-white group-hover:scale-105 transition-transform group-hover:bg-secondary group-hover:text-txt-primary">
                     <CardHeader>
                       <div className="flex items-center gap-4">
                         <div className="grid gap-1">
-                          <CardTitle className="text-muted-foreground">
-                            Lakoe E-commerce
-                          </CardTitle>
+                          <CardTitle>Lakoe E-commerce</CardTitle>
                         </div>
                       </div>
                     </CardHeader>
                     <CardContent>
                       <div className="grid gap-4">
                         <img
-                          src="https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329296/akoelakoe-logo_kutrvs.png"
+                          src={
+                            theme === "light"
+                              ? "https://res.cloudinary.com/ddfdf66n7/image/upload/v1724544686/lakoe-light_teww3h.png"
+                              : "https://res.cloudinary.com/ddfdf66n7/image/upload/v1724329296/akoelakoe-logo_kutrvs.png"
+                          }
                           alt="akoelakoe logo"
                           width={600}
                           height={400}
                           className="rounded-md object-cover w-full aspect-[3/2]"
                         />
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary-foreground">
+                        <div className="flex items-center gap-2 text-sm">
                           <CalendarDaysIcon className="h-8 w-8" />
                           <span>Created At 8 July 2024 - 26 July 2024</span>
                         </div>
@@ -91,13 +98,11 @@ export default function ProjectPage() {
                   to="#"
                   className="block"
                 >
-                  <Card className="h-full w-full bg-secondary group-hover:scale-105 transition-transform group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Card className="h-full w-full bg-muted text-white group-hover:scale-105 transition-transform group-hover:bg-secondary group-hover:text-txt-primary">
                     <CardHeader>
                       <div className="flex items-center gap-4">
                         <div className="grid gap-1">
-                          <CardTitle className="text-muted-foreground">
-                            Clash Of Song
-                          </CardTitle>
+                          <CardTitle>Clash Of Song</CardTitle>
                         </div>
                       </div>
                     </CardHeader>
@@ -110,7 +115,7 @@ export default function ProjectPage() {
                           height={400}
                           className="rounded-md object-cover w-full aspect-[3/2]"
                         />
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary-foreground">
+                        <div className="flex items-center gap-2 text-sm">
                           <CalendarDaysIcon className="h-8 w-8" />
                           <span>Created At 29 July - 9 Aug 2024</span>
                         </div>
@@ -124,13 +129,11 @@ export default function ProjectPage() {
                   to="#"
                   className="block"
                 >
-                  <Card className="h-full w-full bg-secondary group-hover:scale-105 transition-transform group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Card className="h-full w-full bg-muted text-white group-hover:scale-105 transition-transform group-hover:bg-secondary group-hover:text-txt-primary">
                     <CardHeader>
                       <div className="flex items-center gap-4">
                         <div className="grid gap-1">
-                          <CardTitle className="text-muted-foreground">
-                            DumbSound
-                          </CardTitle>
+                          <CardTitle>DumbSound</CardTitle>
                         </div>
                       </div>
                     </CardHeader>
@@ -143,7 +146,7 @@ export default function ProjectPage() {
                           height={400}
                           className="rounded-md object-cover w-full aspect-[3/2]"
                         />
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary-foreground">
+                        <div className="flex items-center gap-2 text-sm">
                           <CalendarDaysIcon className="h-8 w-8" />
                           <span>Created At 13 Aug - present</span>
                         </div>

@@ -1,4 +1,3 @@
-// ThemeSwitch.tsx
 import useThemeStore from "../../store/themeStore";
 import { Switch } from "./switch";
 
