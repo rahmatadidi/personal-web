@@ -47,13 +47,12 @@ export default function ProfilePage() {
           <div className="flex items-center gap-2">
             <CodeIcon className="h-6 w-6" />
             <div className="text-2xl font-bold">
-              <div className="inline-block">
+              <div className="inline-block w-[200px]">
                 <span>{text}</span>
               </div>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-4">
-            <ThemeSwitch />
             <button
               onClick={() => scrollToSection(aboutRef)}
               className="text-sm font-medium hover:underline"
@@ -126,6 +125,7 @@ export default function ProfilePage() {
             )}
             <span className="sr-only">Toggle navigation</span>
           </Button>
+          <ThemeSwitch />
         </div>
       </header>
       <main className="flex-1">
