@@ -52,7 +52,9 @@ export default function ProfilePage() {
               </div>
             </div>
           </div>
+
           <nav className="hidden md:flex items-center gap-4">
+            <ThemeSwitch />
             <button
               onClick={() => scrollToSection(aboutRef)}
               className="text-sm font-medium hover:underline"
@@ -94,6 +96,7 @@ export default function ProfilePage() {
               >
                 <XIcon className="h-6 w-6 bg-muted text-muted-foreground" />
                 <nav className="flex text-muted-foreground flex-col items-center gap-8">
+                  <ThemeSwitch />
                   <button
                     onClick={() => scrollToSection(aboutRef)}
                     className="text-sm font-medium hover:underline"
@@ -125,7 +128,6 @@ export default function ProfilePage() {
             )}
             <span className="sr-only">Toggle navigation</span>
           </Button>
-          <ThemeSwitch />
         </div>
       </header>
       <main className="flex-1">
